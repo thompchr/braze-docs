@@ -278,7 +278,7 @@ This event occurs when an email sent made it successfully to the end-users inbox
   "send_id": (string) id of the message if specified for the campaign (See Send Identifier under API Identifier Types),
   "dispatch_id": (string) id of the message dispatch (unique id for each 'transmission' sent from the Braze platform). Users who are sent a schedule message get the same dispatch_id. Action-based or API triggered messages get a unique dispatch_id per user.,
   "email_address": (string) email address for this event,
-  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Bounce, and SoftBounce events only),
+  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Bounce, and SoftBounce events only.  Will only be shown on SoftBounce events if the message was actually attempted for delivery),
   "ip_pool": (string) IP pool used for message sending
 }
 ```
@@ -411,7 +411,7 @@ This event occurs when an Internet Service Provider returns a hard bounce. A har
   "send_id": (string) id of the message if specified for the campaign (See Send Identifier under API Identifier Types),
   "dispatch_id": (string) id of the message dispatch (unique id for each 'transmission' sent from the Braze platform). Users who are sent a schedule message get the same dispatch_id. Action-based or API triggered messages get a unique dispatch_id per user.,
   "email_address": (string) email address for this event,
-  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Deferrals, Bounce, and SoftBounce events only),
+  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Bounce, and SoftBounce events only.  Will only be shown on SoftBounce events if the message was actually attempted for delivery),
   "ip_pool": (string) IP pool used for message sending,
   "bounce_reason": (string) reason for bounce provided by server
 }
@@ -455,7 +455,7 @@ This event occurs when an Internet Service Provider returns a soft bounce. A sof
   "send_id": (string) id of the message if specified for the campaign (See Send Identifier under API Identifier Types),
   "dispatch_id": (string) id of the message dispatch (unique id for each 'transmission' sent from the Braze platform). Users who are sent a schedule message get the same dispatch_id. Action-based or API triggered messages get a unique dispatch_id per user.,
   "email_address": (string) email address for this event,
-  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Deferrals, Bounce, and SoftBounce events only),
+  "sending_ip": (string) the IP address from which the message was sent (Email Delivery, Bounce, and SoftBounce events only.  Will only be shown on SoftBounce events if the message was actually attempted for delivery),
   "ip_pool": (string) IP pool used for message sending,
   "bounce_reason": (string) reason for bounce provided by server
 }
